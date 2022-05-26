@@ -19,17 +19,6 @@ router.get('/', (req, res) => {
     res.render('main', { layout: 'index' });
 });
 
-// app.use((req, res, next) => {
-//     const userid = req.session.username;
-//     console.log(userid);
-//     if (userid) {
-//         res.locals = { usermenu: true };
-//     } else {
-//         res.locals = { usermenu: false };
-//     }
-//     next();
-// })
-
 
 router.get('/profile', async(req, res) => {
     try {
